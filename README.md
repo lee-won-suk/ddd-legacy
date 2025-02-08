@@ -172,17 +172,32 @@ docker compose -p kitchenpos up -d
 | 메뉴 그룹명 | MenuGroup.name |  |
 
 # 주문
-| 한글명       | 영문명         | 설명                       |
-|-----------|-------------|--------------------------|
-| 주문        | Order       |  |
-| 주문 종류     | OrderType   |  |
-| 배달 주문     | DELIVERY    |  |
-| 포장 주문     | TAKEOUT     |  |
-| 매장내 식사 주문 | EAT_IN      |  |
-| 주문 상태     | OrderStatus |  |
-| 주문 대기중 상태 | WAITING     |  |
-| 주문 수락 상태  | ACCEPTED    |  |
+| 한글명       | 영문명                    | 설명                       |
+|-----------|------------------------|--------------------------|
+| 주문        | Order                  |  |
+| 주문 종류     | OrderType              |  |
+| 배달 주문     | DELIVERY               |  |
+| 포장 주문     | TAKEOUT                |  |
+| 매장내 식사 주문 | EAT_IN                 |  |
+| 주문 상태     | OrderStatus            |  |
+| 주문 대기중 상태 | WAITING                |  |
+| 주문 수락 상태  | ACCEPTED               |  |
+| 배달 중 상태   | DELIVERING             |  |
+| 배달 완료 상태  | DELIVERED              |  |
+| 제공 완료 상태  | SERVED                 |  |
+| 주문 완료 상태  | COMPLETED              |  |
+| 주문 날짜     | orderDateTime          |  |
+| 주문 상품     | OrderLineItem          |  |
+| 주문 상품 개수  | OrderLineItem.quantity |  |
+| 주문 상품 금액  | OrderLineItem.price    |  |
 
+# 주문 테이블
+| 한글명           | 영문명                       | 설명                       |
+|---------------|---------------------------|--------------------------|
+| 주문 테이블        | Ordertable                |  |
+| 주문 테이블명       | Ordertable.name           |  |
+| 주문 테이블 인원수    | Ordertable.numberOfGuests |  |
+| 주문 테이블 활성화 여부 | Ordertable.occupied       |  |
 
 
 ## 모델링
