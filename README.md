@@ -172,12 +172,16 @@ docker compose -p kitchenpos up -d
 | 메뉴 그룹명 | MenuGroup.name |  |
 
 # 주문
-| 한글명   | 영문명       | 설명                       |
-|-------|-----------|--------------------------|
-| 주문    | Order     |  |
-| 주문 종류 | OrderType |  |
-| 배달 주문 | DELIVERY  |  |
-| 포장 주문 | DELIVERY  |  |
+| 한글명       | 영문명         | 설명                       |
+|-----------|-------------|--------------------------|
+| 주문        | Order       |  |
+| 주문 종류     | OrderType   |  |
+| 배달 주문     | DELIVERY    |  |
+| 포장 주문     | TAKEOUT     |  |
+| 매장내 식사 주문 | EAT_IN      |  |
+| 주문 상태     | OrderStatus |  |
+| 주문 대기중 상태 | WAITING     |  |
+| 주문 수락 상태  | ACCEPTED    |  |
 
 
 
